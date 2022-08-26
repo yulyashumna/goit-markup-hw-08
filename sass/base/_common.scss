@@ -1,0 +1,14 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--white-color);
+    font-size: 14px;
+}
+
+.list {
+    list-style: none;
+    @extend %align-template; 
+    }
+
+.link, .logo, .navigation__link {
+    text-decoration: none;
+}

@@ -1,0 +1,125 @@
+.coordinates {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--dark-gray-color) ;
+}
+    
+.coordinates-soc__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+    color: var(--white-color); 
+}
+
+.footer-soc__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    @extend %align-template; 
+    justify-content: center;
+    
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+    background-color: var(--blue-color);
+}
+}
+
+.footer-soc__item + .footer-soc__item {
+    margin-left: 10px;
+}
+
+.footer-soc__icon {
+    fill: var(--white-color);
+}
+
+
+.coordinates-soc {
+   margin-left: 70px;
+}
+
+.subscription {
+    margin-left: auto;
+}
+
+.subscription__title {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+color: var(--white-color);
+}
+
+.subscription-form__input {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+
+width: 358px;
+height: 50px;
+padding-left: 16px;
+background-color: var(--dark-gray-color);
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+
+.subscription-form__btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--white-color);
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87; 
+   letter-spacing: 0.06em;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border: none;
+   border-radius: 4px;
+   background-color: var(--blue-color);
+   width: 200px;
+   height: 50px;
+
+   margin-left: 12px;
+
+   transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover {
+    background-color:#188CE8; 
+}
+
+}
+
+.subscription-form__icon {
+    margin-left: 10px;
+}
+
+
+

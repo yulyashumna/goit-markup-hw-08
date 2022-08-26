@@ -1,0 +1,122 @@
+.border {
+    border-bottom: 1px solid #ECECEC ;
+}
+
+.header {
+    align-items: center;
+}
+
+.navigation {
+    position: relative;
+    @extend %align-template; 
+}
+
+.navigation__list .current {
+    color: var(--blue-color);
+}
+
+.navigation__list {
+    margin-left: 93px;
+}
+
+.current {
+    color: var(--blue-color);
+    position: relative;
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 4px;
+        background: currentColor;
+        width: 100%;
+        border-radius: 2px;
+        bottom: -1px;
+        left: 0px;
+    }
+}
+
+.list .navigation__item + .navigation__item {
+    margin-left: 50px;
+}
+
+.navigation__list.navigation__item + .navigation__item {
+    margin-left: 50px;
+}
+
+.centered {
+    @extend %align-template; 
+}
+
+.navigation__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--black-color); 
+    
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--blue-color);
+    }
+ }
+
+.contacts {
+    margin-left: auto;
+}
+
+.navigation__mail {
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--grey-color) ;
+padding-top: 32px;
+padding-bottom: 32px;
+
+@extend %align-template; 
+
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    color: var(--blue-color);
+}
+}
+
+.navigation__tel {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-color); 
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @extend %align-template; 
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: var(--blue-color);
+    }
+ }
+
+.contacts__icon {
+  fill: currentColor ; 
+  margin-right: 10px; 
+}
+

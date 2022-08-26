@@ -1,0 +1,26 @@
+.footer-list {
+    display: block;
+   flex-direction: column; 
+   margin-right: auto;
+}
+
+.footer-item {
+    margin-top: 9px;
+}
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+
+.mail, .tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}

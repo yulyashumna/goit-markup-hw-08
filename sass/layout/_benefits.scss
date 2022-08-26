@@ -1,0 +1,44 @@
+.paddingtop {
+    padding-top: 94px;
+}
+
+.paddingbot {
+    padding-bottom: 94px;
+}
+
+.desk__list {
+    display: flex;
+    list-style: none;
+   }
+
+.desk__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    color: var(--black-color);
+}
+
+.desk__item {
+    width: 270px;
+   
+    & + & {
+        margin-left: 30px;
+    }
+}
+
+.desk__text {
+    line-height: 1.71;
+    color: var(--grey-color);
+}
+
+.icon {
+  @extend %align-template; 
+  height: 120px;
+  background-color: var(--milk-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  
+}
